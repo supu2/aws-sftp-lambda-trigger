@@ -15,8 +15,8 @@ make destroy
 
  # Test
 ```
- make build
- make run 
+make build
+make run 
 SFTP_SERVER:xxxx.server.transfer.us-east-1.amazonaws.com
 SFTP Username:ftp-user
 Upload file:/opt/test-file.txt
