@@ -1,12 +1,18 @@
 # Prerequests
- - awscli, 
- - aws-credentials,
- - terraform-cli 
- - docker,
+ - awscli and account
+ - terraform-cli
+ - docker
+
+ # Deployment
  ```
  make prepare
+ make deploy
+ ```
+
+ # Test
+```
  make build
- make test 
+ make run 
 SFTP_SERVER:xxxx.server.transfer.us-east-1.amazonaws.com
 SFTP Username:ftp-user
 Upload file:/opt/test-file.txt
@@ -18,10 +24,4 @@ Connected to xxx.server.transfer.us-east-1.amazonaws.com.
 sftp> ls
 f20-00000000000000000000  f20-11111111111111111111  
 f20-22222222222222222222  f20-asd123asdsad
- ```
-
-
-# Test
-```
-make test
 ```

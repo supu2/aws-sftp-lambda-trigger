@@ -24,7 +24,7 @@ replace_key:
 build: ## Build the container
 	docker build -t $(APP_NAME) .
 
-test: ## Run container for the test
+run: ## Run container for the test
 	docker run -i -t --rm -v  $(current_dir)/ssh/:/home/sftp/.ssh/  -v $(current_dir)/test/:/opt/ --name="$(APP_NAME)" $(APP_NAME)
 
 stop: ## Stop and remove a running container
