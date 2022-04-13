@@ -1,4 +1,4 @@
-# Prerequests
+# Prerequire
  - awscli and account
  - terraform-cli
  - docker
@@ -8,6 +8,10 @@
  make prepare
  make deploy
  ```
+# Destroy
+```
+make destroy
+```
 
  # Test
 ```
