@@ -1,3 +1,12 @@
+This project is SFTP Server and based aws services like s3, lambda and transfer familty.
+SFTP server use the s3 as backend. User can login SFTP server with ssh-key. 
+After file uploaded s3  trigger notification to the lambda function.
+The function reads 20 bytes of content and create new file in s3. The filename will be f20-$(first 20 bytes of content)
+
+# Topology
+![image](https://user-images.githubusercontent.com/53692719/163347163-39c8d927-f19f-4e54-b583-9f5b1c3046cf.png)
+
+
 # Prerequire
  - awscli and account
  - terraform-cli
